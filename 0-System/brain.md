@@ -54,13 +54,13 @@ To jest drugi mózg Product Buildera. Przeczytaj `0-System/about.md` zanim odpow
 
 Cztery operacje. Wywołujesz je językiem naturalnym - nie ma magicznych komend.
 
-### Git — sync przed, commit po
+### Git — sync przed, commit+push po
 
 **Każda operacja modyfikująca pliki** zaczyna się i kończy wywołaniem meta-skilla `git`:
 
 ```
-Przed startem  → git sync  (1-Skills/git/sync.md)
-Po zakończeniu → git commit (1-Skills/git/commit.md)
+Przed startem  → git sync          (1-Skills/git/sync.md)
+Po zakończeniu → git commit + push  (1-Skills/git/commit.md)
 ```
 
 Wyjątek: **Query** — samo czytanie, bez git.

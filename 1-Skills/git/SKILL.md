@@ -1,6 +1,6 @@
 ---
 name: git
-description: Meta-skill do operacji git — router do sub-skilli sync i commit
+description: Meta-skill do operacji git — router do sub-skilli sync, commit i push
 ---
 
 # Git
@@ -28,7 +28,7 @@ Meta-skill orkiestrujący operacje git na repozytorium brain. Nie wykonuje opera
 ```
 1. git sync    ← przed startem
    ...praca...
-2. git commit  ← po zakończeniu
+2. git commit + push  ← po zakończeniu
 ```
 
-Zawsze sync przed, zawsze commit po. Wyjątek: operacja Query (samo czytanie) — nie wymaga commita.
+Zawsze sync przed, zawsze commit+push po. Wyjątek: operacja Query (samo czytanie) — bez git.

@@ -42,6 +42,6 @@ Skille w `1-Skills/` dzielą się na dwa typy:
 
 Każda operacja modyfikująca pliki brain:
 1. Zaczyna się od `git sync` (`1-Skills/git/sync.md`)
-2. Kończy się `git commit` (`1-Skills/git/commit.md`) — tylko jeśli są realne zmiany w plikach
+2. Kończy się `git commit + push` (`1-Skills/git/commit.md`) — tylko jeśli są realne zmiany w plikach
 
 Wyjątek: Query (samo czytanie) — bez git.
