@@ -14,14 +14,31 @@ Meta-skill orkiestrujący operacje git na repozytorium brain. Nie wykonuje opera
 | Sub-skill | Plik | Kiedy |
 |---|---|---|
 | Sync | `sync.md` | Przed każdą operacją — pobierz zmiany z remote, sprawdź konflikty |
-| Commit | `commit.md` | Po każdej operacji modyfikującej pliki brain |
+| Commit + Push | `commit.md` | Po każdej operacji modyfikującej pliki brain |
 
 ## Routing
 
 | Sygnał | Sub-skill |
 |---|---|
 | przed operacją, "aktualizuj repo", "pobierz zmiany", "pull" | `sync.md` |
-| po operacji, "zapisz zmiany", "commituj", "zrób commit" | `commit.md` |
+| po operacji, "zapisz zmiany", "commituj", "zrób commit", "pushuj" | `commit.md` |
+
+## Wymaganie: autoryzacja GitHub
+
+Push wymaga zalogowanego `gh` CLI. Sprawdź raz:
+
+```bash
+gh auth status
+```
+
+Jeśli brak — zainstaluj i zaloguj:
+
+```bash
+sudo apt install gh
+gh auth login
+```
+
+Po `gh auth login` push działa automatycznie bez dodatkowej konfiguracji.
 
 ## Kolejność w każdej sesji
 

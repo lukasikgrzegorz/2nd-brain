@@ -14,7 +14,7 @@ graph TD
     Brain --> S6["6-News/\n📰 Artykuły / newsy"]
     Brain --> S7["7-Courses/\n🎓 Materiały z kursów"]
     Brain --> S8["8-Templates/\n📄 Szablony"]
-    Brain --> S9["9-Archive/\n🗄️ Archiwum źródeł"]
+    Brain --> S9["9-Archive/\n🗄️ Archiwum — pliki tu nie są czytane"]
 
     S0 --> about["about.md — profil osoby"]
     S0 --> brainmd["brain.md — reguły operacyjne"]
@@ -52,20 +52,29 @@ flowchart TD
     ReadIdx --> ReadPages["Czytaj strony\nwiki"]
     ReadPages --> Answer["Odpowiedź\n[source: ...]"]
 
-    PI & PN & PC --> GitSync["git sync\n(pull --rebase)"]
-    GitSync --> ProcessFile["Utwórz/zaktualizuj\nstronę w 3-Knowledge/"]
+    PI & PN & PC --> GhSync["gh repo sync\n(pull przed pracą)"]
+    GhSync --> ProcessFile["Utwórz/zaktualizuj\nstronę w 3-Knowledge/"]
     ProcessFile --> UpdateIdx["Zaktualizuj\nindex.md + log.md"]
-    UpdateIdx --> MoveRaw["Przenieś źródło\ndo 9-Archive/"]
-    MoveRaw --> GitCommit["git commit"]
+    UpdateIdx --> MoveArchive["Przenieś źródło\ndo 9-Archive/"]
+    MoveArchive --> GitCommit["git add -A\ngit commit"]
+    GitCommit --> GhPush["gh repo sync\n(push po pracy)"]
 
-    L --> GitSync2["git sync"]
-    GitSync2 --> CheckWiki["Sprawdź sprzeczności,\nbrakujące cytaty,\nosierocone strony"]
+    L --> GhSync2["gh repo sync\n(pull przed pracą)"]
+    GhSync2 --> CheckWiki["Sprawdź sprzeczności,\nbrakujące cytaty,\nosierocone strony"]
     CheckWiki --> LintReport["Zapisz lint-RRRR-MM-DD.md\n+ wpis w log.md"]
-    LintReport --> GitCommit2["git commit"]
+    LintReport --> GitCommit2["git add -A\ngit commit"]
+    GitCommit2 --> GhPush2["gh repo sync\n(push po pracy)"]
+
+    GhNote["⚠️ Wymaga: gh auth login"]
 
     style GitCommit fill:#2d6a4f,color:#fff
     style GitCommit2 fill:#2d6a4f,color:#fff
+    style GhPush fill:#1b4332,color:#fff
+    style GhPush2 fill:#1b4332,color:#fff
+    style GhSync fill:#1b4332,color:#fff
+    style GhSync2 fill:#1b4332,color:#fff
     style Answer fill:#1d3557,color:#fff
+    style GhNote fill:#fff3cd,color:#333
 ```
 
 ---
@@ -86,12 +95,16 @@ graph TD
     Skills --> YT["youtube/ 🌿 LEAF"]
     Skills --> DA["data-analysis/ 🌿 LEAF"]
 
-    Git -->|"deleguje do"| Sync["sync.md\ngit pull --rebase"]
-    Git -->|"deleguje do"| Commit["commit.md\ngit commit"]
+    Git -->|"deleguje do"| Sync["sync.md\ngh repo sync (pull)"]
+    Git -->|"deleguje do"| Commit["commit.md\ngit commit + gh repo sync (push)"]
+
+    GhCLI["🔑 gh CLI\ngh auth login\n(jednorazowa konfiguracja)"]
+    Sync & Commit -->|"autoryzacja przez"| GhCLI
 
     note1["💡 Zasada lazy loading:\nczytaj SKILL.md leaf-skilla\ndopiero gdy do niego delegujesz"]
 
     style Git fill:#6d4c41,color:#fff
     style AgentsMD fill:#1a237e,color:#fff
+    style GhCLI fill:#1b4332,color:#fff
     style note1 fill:#f5f5f5,color:#333
 ```

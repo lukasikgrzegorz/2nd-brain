@@ -5,6 +5,21 @@ description: Commituje zmiany i pushuje po operacji modyfikującej pliki brain �
 
 # Git Commit & Push
 
+## Wymaganie: gh CLI
+
+Wszystkie operacje git używają `gh` CLI. Sprawdź raz przed pierwszym użyciem:
+
+```bash
+gh auth status
+```
+
+Jeśli brak — zainstaluj i zaloguj:
+
+```bash
+sudo apt install gh
+gh auth login
+```
+
 ## Kiedy wywoływać
 
 Po operacji która zmodyfikowała pliki brain:
@@ -49,7 +64,7 @@ system: rename 9-Raw → 9-Archive
 ```bash
 git add -A
 git commit -m "<komunikat>"
-git push
+gh repo sync
 ```
 
 ### Krok 4: Potwierdź
@@ -60,4 +75,4 @@ Powiedz użytkownikowi co zostało commitowane i spushowane, w jednym zdaniu.
 
 - Commituj tylko po zakończeniu pełnej operacji, nie w trakcie
 - Zawsze pushuj po commicie — commit bez pusha to praca która nie istnieje
-- Jeśli `git push` zwróci błąd — pokaż go użytkownikowi, nie próbuj naprawić samodzielnie
+- Jeśli komenda zwróci błąd — pokaż go użytkownikowi, nie próbuj naprawić samodzielnie
