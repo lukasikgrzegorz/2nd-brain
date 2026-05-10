@@ -1,6 +1,6 @@
 ---
 name: process-course
-description: Przetwarza notatki i materiały z kursów z 7-Courses/ przez pętlę wiedzy Karpathy'ego — kompiluje do wiki 3-Knowledge/, archiwizuje do 9-Raw/. Do organizowania wiedzy z kursów online, warsztatów i bootcampów.
+description: Przetwarza notatki i materiały z kursów z 7-Courses/ przez pętlę wiedzy Karpathy'ego — kompiluje do wiki 3-Knowledge/, archiwizuje do 9-Archive/. Do organizowania wiedzy z kursów online, warsztatów i bootcampów.
 ---
 
 # Process Course
@@ -69,18 +69,18 @@ sources:
 
 ### 5. Archiwizuj źródło
 
-Przenieś przetworzony plik z `7-Courses/` do `9-Raw/`.
+Przenieś przetworzony plik z `7-Courses/` do `9-Archive/`.
 
 ### 6. Raportuj
 
 ```
 ✓ Przetworzono: "nazwa-pliku.md" [Kurs: nazwa kursu]
   → Wiki: 3-Knowledge/[Podfolder]/[Tytuł].md (utworzono/zaktualizowano)
-  → Archiwum: 9-Raw/
+  → Archiwum: 9-Archive/
 ```
 
 ## Czerwone flagi - STOP
 
 - Przepisujesz notatki 1:1 bez syntezy
 - Tworzysz osobną stronę wiki dla każdej lekcji zamiast grupować po konceptach
-- Modyfikujesz plik w `9-Raw/` (archiwum jest niezmienne)
+- Modyfikujesz plik w `9-Archive/` (archiwum jest niezmienne)

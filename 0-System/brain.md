@@ -27,7 +27,7 @@ To jest drugi mózg Product Buildera. Przeczytaj `0-System/about.md` zanim odpow
 | `6-News/` | Materiały newsowe i artykuły do przetworzenia (blogger workflow) | Człowiek |
 | `7-Courses/` | Notatki i materiały z kursów | Człowiek |
 | `8-Templates/` | Szablony dokumentów (PRD, OST, RICE, roadmapa...) | Człowiek + AI |
-| `9-Raw/` | Archiwum przetworzonych źródeł (przeniesione z Inbox/News/Courses po ingestcie) | AI przenosi tu pliki po przetworzeniu |
+| `9-Archive/` | Archiwum przetworzonych źródeł (przeniesione z Inbox/News/Courses po ingestcie) | AI przenosi tu pliki po przetworzeniu |
 
 ### Architektura skilli
 
@@ -92,7 +92,7 @@ Gdy człowiek mówi "przetwórz to", "zrób ingest", "dodałem coś do Inbox":
 6. Cytuj źródło przy każdym twierdzeniu: `[source: nazwa-pliku.md]`
 7. Zaktualizuj `3-Knowledge/index.md`
 8. Dopisz wpis do `3-Knowledge/log.md` (data, źródło, co powstało/zaktualizowano)
-9. Przenieś przetworzony plik do `9-Raw/`
+9. Przenieś przetworzony plik do `9-Archive/`
 10. **git commit** — wywołaj `1-Skills/git/commit.md` z typem `ingest`
 
 ### 2. Query - odpowiedź z wiedzy

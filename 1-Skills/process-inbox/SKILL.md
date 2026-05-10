@@ -1,6 +1,6 @@
 ---
 name: process-inbox
-description: Przetwarza nowe pliki z 5-Inbox/ i Clippings/ przez pętlę wiedzy Karpathy'ego — wzbogaca, kompiluje do wiki 3-Knowledge/, archiwizuje do 9-Raw/
+description: Przetwarza nowe pliki z 5-Inbox/ i Clippings/ przez pętlę wiedzy Karpathy'ego — wzbogaca, kompiluje do wiki 3-Knowledge/, archiwizuje do 9-Archive/
 ---
 
 # Process Inbox
@@ -34,7 +34,7 @@ Przeczytaj pełną zawartość pliku. Wyciągnij:
 
 ### 2. Sprawdź duplikaty
 
-Przeszukaj `3-Knowledge/` i `9-Raw/` - czy ten temat już jest przetworzony?
+Przeszukaj `3-Knowledge/` i `9-Archive/` - czy ten temat już jest przetworzony?
 - Jeśli tak → AKTUALIZUJ istniejącą stronę wiki (dodaj nowe insighty, dodaj źródło do YAML)
 - Jeśli nie → UTWÓRZ nową stronę wiki
 
@@ -70,14 +70,14 @@ sources:
 
 ### 4. Archiwizuj źródło
 
-Przenieś przetworzony plik z `5-Inbox/` lub `Clippings/` do `9-Raw/`.
+Przenieś przetworzony plik z `5-Inbox/` lub `Clippings/` do `9-Archive/`.
 
 ### 5. Raportuj
 
 ```
 ✓ Przetworzono: "nazwa-pliku.md"
   → Wiki: 3-Knowledge/[Podfolder]/[Tytuł Strony].md (utworzono/zaktualizowano)
-  → Archiwum: 9-Raw/
+  → Archiwum: 9-Archive/
 ```
 
 ## Tryb batch (--all)
@@ -95,7 +95,7 @@ Przenieś przetworzony plik z `5-Inbox/` lub `Clippings/` do `9-Raw/`.
 
 ## Czerwone flagi - STOP
 
-- Modyfikujesz plik w `9-Raw/` (archiwum jest niezmienne)
+- Modyfikujesz plik w `9-Archive/` (archiwum jest niezmienne)
 - Tworzysz stronę wiki z nazwą-slug zamiast czytelnego tytułu
 - Kopiujesz treść 1:1 zamiast kompilować
 - Przenosisz plik bez tworzenia/aktualizacji strony wiki

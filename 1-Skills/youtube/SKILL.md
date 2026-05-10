@@ -110,7 +110,7 @@ type: video
 3. Jeśli nie → UTWÓRZ nową stronę w odpowiednim podfolderze `3-Knowledge/`
 4. Czytelna nazwa pliku, `[[backlinki]]`, `[source: ...]` cytaty
 
-**Krok C:** Przenieś notatkę z `5-Inbox/` do `9-Raw/`
+**Krok C:** Przenieś notatkę z `5-Inbox/` do `9-Archive/`
 
 ## Self-check
 
