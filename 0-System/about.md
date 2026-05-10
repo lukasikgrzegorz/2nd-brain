@@ -1,7 +1,6 @@
 # O mnie
 
-> Ten plik mówi Twojemu AI kim jesteś, jak pracujesz i czego od niego oczekujesz.
-> Wypełnij go uruchamiając skill `second-brain-setup` albo edytuj ręcznie.
+Cześć, jestem Grzegorz.
 
 ---
 
@@ -22,4 +21,4 @@
 
 ## Historia
 
-- [RRRR-MM-DD]: profil utworzony
+- 2026-05-10: profil utworzony (Grzegorz)
