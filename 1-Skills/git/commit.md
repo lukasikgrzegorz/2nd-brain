@@ -64,8 +64,10 @@ system: rename 9-Raw → 9-Archive
 ```bash
 git add -A
 git commit -m "<komunikat>"
-gh repo sync
+gh repo sync --source
 ```
+
+> **Nie używaj `git push`** — do pushowania używamy `gh repo sync --source`.
 
 ### Krok 4: Potwierdź
 

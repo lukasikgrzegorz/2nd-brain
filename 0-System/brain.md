@@ -35,14 +35,13 @@ To jest drugi mózg Product Buildera. Przeczytaj `0-System/about.md` zanim odpow
 1-Skills/
   git/                 ← meta-skill: operacje git
     SKILL.md           ← router (sync / commit)
-    sync.md            ← sub-skill: git pull przed operacją
+    sync.md            ← sub-skill: gh repo sync przed operacją
     commit.md          ← sub-skill: git commit po operacji
   second-brain-setup/  ← leaf-skill: konfiguracja profilu
   process-inbox/       ← leaf-skill: przetwarzanie Inbox
   process-news/        ← leaf-skill: przetwarzanie News (blogger workflow)
   process-course/      ← leaf-skill: przetwarzanie materiałów z kursów
   youtube/             ← leaf-skill: ingest z YouTube
-  data-analysis/       ← leaf-skill: analiza danych
 ```
 
 **Leaf-skill** — samodzielnie wykonuje workflow.

@@ -57,7 +57,7 @@ Przed każdym sub-skillem sprawdź stan repo:
 
 ```bash
 git status --short
-git pull --rebase
+gh repo sync
 ```
 
 Jeśli są niezacommitowane zmiany — poinformuj użytkownika zanim zaczniesz.
