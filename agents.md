@@ -34,7 +34,6 @@ Skille w `1-Skills/` dzielą się na dwa typy:
 | `second-brain-setup/` | Konfiguracja profilu `0-System/about.md` |
 | `process-inbox/` | Przetwarzanie plików z `5-Inbox/` do Knowledge |
 | `youtube/` | Ingest transkryptów z YouTube |
-| `data-analysis/` | Analiza danych |
 | `process-news/` | Przetwarzanie materiałów z `6-News/` do Knowledge |
 | `process-course/` | Przetwarzanie notatek z kursów z `7-Courses/` do Knowledge |
 

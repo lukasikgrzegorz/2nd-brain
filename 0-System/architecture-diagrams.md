@@ -93,7 +93,6 @@ graph TD
     Skills --> PNews["process-news/ 🌿 LEAF"]
     Skills --> PCourse["process-course/ 🌿 LEAF"]
     Skills --> YT["youtube/ 🌿 LEAF"]
-    Skills --> DA["data-analysis/ 🌿 LEAF"]
 
     Git -->|"deleguje do"| Sync["sync.md\ngh repo sync (pull)"]
     Git -->|"deleguje do"| Commit["commit.md\ngit commit + gh repo sync (push)"]
