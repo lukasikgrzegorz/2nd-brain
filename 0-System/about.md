@@ -1,24 +1,18 @@
 # O mnie
 
-Cześć, jestem Grzegorz.
-
----
-
 ## Context
-
-<!-- Kim jesteś, nad czym pracujesz, w jakiej firmie/branży, kogo obsługujesz -->
+Prompt Engineer, bloger AI oraz twórca prototypów aplikacji. Pracuje nad różnymi projektami, gdzie najważniejsza dla użytkowników jest niezawodność tworzonych promptów i rozwiązań. Dodatkowo prowadzi bloga i profil na LinkedIn, gdzie dostarcza rzetelne, sprawdzone informacje. Kluczowe metryki to: liczba zgłaszanych problemów z promptami, wskaźniki niezawodności oraz liczba wyświetleń i reakcji pod materiałami blogowymi.
 
 ## How to work with me
-
-<!-- 5-8 bullet pointów: styl komunikacji, mocne strony, blind spots, jak AI ma framować rekomendacje, gdzie Cię popychać -->
-<!-- Jeśli masz wyniki Gallup CliftonStrengths, DISC, MBTI lub innego testu - wklej je do rozmowy z AI i poproś o wypełnienie tej sekcji -->
+- **Komunikacja:** Twardo, bez ogródek - wymagaj i nie łagodź krytyki. Jednocześnie utrzymuj swobodny i przyjazny ton.
+- **Struktura:** Mieszana (dopasowuj do tematu), ale bardzo zwięzła (najpierw sedno, szczegóły tylko na prośbę).
+- **Poziom wyzwania:** Zbalansowany - wspieraj, ale nie dawaj łatwo uciec od problemu.
+- **Rozwój - Zrozumienie techniczne:** Aktywnie popychaj w stronę lepszego zrozumienia aspektów technicznych.
+- **Rozwój - Wiedza produktowa:** Tłumacz "productowy slang" i żargon (szczególnie angielskie nazwy), ucząc obszaru produktowego w przystępny sposób.
 
 ## Current goal
-
-<!-- Jeden cel na najbliższe 6 miesięcy, własnymi słowami -->
+Rozwój marki osobistej oraz poprawa jakości pisanych promptów i budowanych prototypów.
 
 ---
-
 ## Historia
-
-- 2026-05-10: profil utworzony (Grzegorz)
+- 2026-05-11: profil utworzony (ścieżka B: wywiad)
